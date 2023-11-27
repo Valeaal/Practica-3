@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 
@@ -9,7 +10,7 @@ public class Expediente {
 
 	public Expediente(Paciente paciente) throws AssertionError {
 
-		// Acceso no se inicializa porque puede ser cero
+		accesos = new ArrayList<>();
 		this.paciente = paciente;
 
 		// [Restricción] El paciente no puede ser ser nulo
