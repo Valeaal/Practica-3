@@ -17,16 +17,8 @@ public class Bandeja {
     {
         if(estado == status.Normal || estado == status.Empty)
         {
-            if(capacidad == 1)
-            {
-                piezas.add(item);
-                estado = status.Full;
-            }
-            else
-            {
-                piezas.add(item);
-                estado = status.Normal;
-            }
+            piezas.add(item);
+            estado = (capacidad == 1) ? status.Full : status.Normal;
             capacidad--;
         }
     }
