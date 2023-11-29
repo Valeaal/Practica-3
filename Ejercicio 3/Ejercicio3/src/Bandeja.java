@@ -36,16 +36,8 @@ public class Bandeja {
         Pieza pieza = null;
         if(estado != status.Empty)
         {
-            if(estado == status.Normal)
-            {
-                pieza = piezas.get(0);
-                estado = (piezas.size() > 1) ? status.Normal : status.Empty;
-            }
-            else
-            {
-                pieza = piezas.get(0);
-                estado = (piezas.size() > 1) ? status.Normal : status.Empty;
-            }
+            pieza = piezas.get(0);
+            estado = (piezas.size() > 1) ? status.Normal : status.Empty;
             piezas.remove(0);
             capacidad++;
         }
