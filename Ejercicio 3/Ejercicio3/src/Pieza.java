@@ -1,3 +1,6 @@
 public class Pieza {
-    public Pieza() {}
+    public Pieza ()
+    {
+
+    }
 }

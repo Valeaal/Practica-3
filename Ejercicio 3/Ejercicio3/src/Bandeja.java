@@ -1,43 +1,51 @@
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 public class Bandeja {
-    private enum status {Empty, Full, Normal};
     private int capacidad;
-    private status estado;
+    private EstadoBandeja estado;
     private List<Pieza> piezas;
 
-    public Bandeja(int capacidad) {
+    public Bandeja(int capacidad)
+    {
         this.capacidad = capacidad;
-        estado = status.Empty;
-        piezas = new ArrayList<Pieza>();
+        this.estado = new EstadoEmpty();
+        this.piezas = new ArrayList<Pieza>();
+
     }
 
-    public void put (Pieza item)
+    public void put(Pieza pieza)
     {
-        if(estado == status.Normal || estado == status.Empty)
-        {
-            piezas.add(item);
-            estado = (capacidad == 1) ? status.Full : status.Normal;
-            capacidad--;
-        }
+        this.estado.put(this, pieza);
     }
 
-    public Pieza get ()
+    public Pieza get()
     {
-        Pieza pieza = null;
-        if(estado != status.Empty)
-        {
-            pieza = piezas.get(0);
-            estado = (piezas.size() > 1) ? status.Normal : status.Empty;
-            piezas.remove(0);
-            capacidad++;
-        }
-        return pieza;
+        return this.estado.get(this);
     }
 
-    public int size ()
+    public List<Pieza> getPiezas()
     {
-        return piezas.size();
+        return this.piezas;
+    }
+
+    public void setEstado(EstadoBandeja estado)
+    {
+        this.estado = estado;
+    }
+
+    public EstadoBandeja getEstado()
+    {
+        return this.estado;
+    }
+
+    public void setCapacidad(int value)
+    {
+        this.capacidad = value;
+    }
+
+    public int getCapacidad()
+    {
+        return this.capacidad;
     }
 }
