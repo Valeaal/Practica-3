@@ -3,7 +3,7 @@ public class EstadoFull implements EstadoBandeja
     @Override
     public void put(Bandeja bandeja, Pieza pieza)
     {
-        //No se puede anyadir mas piezas a una bandeja vacia
+        //No se puede añadir mas piezas a una bandeja vacia
     }
 
     @Override

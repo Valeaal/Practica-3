@@ -7,9 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2Yljdx3ek0OXqSduMO0lz9Nzj53" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,7 +20,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/carla/Documents/GitHub/Practica-3/Ejercicio 1/Andamiaje",
+    "last_opened_file_path": "C:/Users/carla/Documents/GitHub/Practica-3/Ejercicio 2/Andamiaje",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -33,6 +33,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701107152088</updated>
       <workItem from="1701107152916" duration="36000" />
+      <workItem from="1701275023931" duration="28000" />
     </task>
     <servers />
   </component>
